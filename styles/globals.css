@@ -317,3 +317,37 @@ pre code {
   border-left: 4px solid #d1d5db;
   color: #4b5563;
 }
+
+.docs-main .card {
+  margin: 1rem 0;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #fff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.docs-main .card a {
+  display: block;
+  padding: 0.85rem 1rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.docs-main .card b {
+  display: block;
+  font-size: 0.98rem;
+  color: #111827;
+}
+
+.docs-main .card small {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.86rem;
+  color: #6b7280;
+}
+
+.docs-main .card:hover {
+  border-color: #93c5fd;
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.12);
+  transform: translateY(-1px);
+}
