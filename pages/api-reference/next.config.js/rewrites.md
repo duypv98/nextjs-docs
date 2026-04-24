@@ -23,7 +23,7 @@ description: Add rewrites to your Next.js app.
 
 Rewrites allow you to map an incoming request path to a different destination path.
 
-Rewrites act as a URL proxy and mask the destination path, making it appear the user hasn't changed their location on the site. In contrast, [redirects](/docs/api-reference/next.config.js/redirects.md) will reroute to a new page and show the URL changes.
+Rewrites act as a URL proxy and mask the destination path, making it appear the user hasn't changed their location on the site. In contrast, [redirects](/api-reference/next.config.js/redirects) will reroute to a new page and show the URL changes.
 
 To use rewrites you can use the `rewrites` key in `next.config.js`:
 
@@ -91,12 +91,12 @@ Note: rewrites in `beforeFiles` do not check the filesystem/dynamic routes immed
 
 The order Next.js routes are checked is:
 
-1. [headers](/docs/api-reference/next.config.js/headers) are checked/applied
-2. [redirects](/docs/api-reference/next.config.js/redirects) are checked/applied
+1. [headers](/api-reference/next.config.js/headers) are checked/applied
+2. [redirects](/api-reference/next.config.js/redirects) are checked/applied
 3. `beforeFiles` rewrites are checked/applied
-4. static files from the [public directory](/docs/basic-features/static-file-serving), `_next/static` files, and non-dynamic pages are checked/served
+4. static files from the [public directory](/basic-features/static-file-serving), `_next/static` files, and non-dynamic pages are checked/served
 5. `afterFiles` rewrites are checked/applied, if one of these rewrites is matched we check dynamic routes/static files after each match
-6. `fallback` rewrites are checked/applied, these are applied before rendering the 404 page and after dynamic routes/all static assets have been checked. If you use [fallback: true/'blocking'](/docs/api-reference/data-fetching/get-static-paths#fallback-true) in `getStaticPaths`, the fallback `rewrites` defined in your `next.config.js` will _not_ be run.
+6. `fallback` rewrites are checked/applied, these are applied before rendering the 404 page and after dynamic routes/all static assets have been checked. If you use [fallback: true/'blocking'](/api-reference/data-fetching/get-static-paths#fallback-true) in `getStaticPaths`, the fallback `rewrites` defined in your `next.config.js` will _not_ be run.
 
 ## Rewrite parameters
 
@@ -148,7 +148,7 @@ module.exports = {
 }
 ```
 
-Note: for static pages from the [Automatic Static Optimization](/docs/advanced-features/automatic-static-optimization.md) or [prerendering](/docs/basic-features/data-fetching/get-static-props.md) params from rewrites will be parsed on the client after hydration and provided in the query.
+Note: for static pages from the [Automatic Static Optimization](/advanced-features/automatic-static-optimization) or [prerendering](/basic-features/data-fetching/get-static-props) params from rewrites will be parsed on the client after hydration and provided in the query.
 
 ## Path Matching
 
@@ -364,11 +364,11 @@ module.exports = {
 }
 ```
 
-See additional information on incremental adoption [in the docs here](/docs/migrating/incremental-adoption.md).
+See additional information on incremental adoption [in the docs here](/migrating/incremental-adoption).
 
 ### Rewrites with basePath support
 
-When leveraging [`basePath` support](/docs/api-reference/next.config.js/basepath.md) with rewrites each `source` and `destination` is automatically prefixed with the `basePath` unless you add `basePath: false` to the rewrite:
+When leveraging [`basePath` support](/api-reference/next.config.js/basepath) with rewrites each `source` and `destination` is automatically prefixed with the `basePath` unless you add `basePath: false` to the rewrite:
 
 ```js
 module.exports = {
@@ -394,7 +394,7 @@ module.exports = {
 
 ### Rewrites with i18n support
 
-When leveraging [`i18n` support](/docs/advanced-features/i18n-routing.md) with rewrites each `source` and `destination` is automatically prefixed to handle the configured `locales` unless you add `locale: false` to the rewrite. If `locale: false` is used you must prefix the `source` and `destination` with a locale for it to be matched correctly.
+When leveraging [`i18n` support](/advanced-features/i18n-routing) with rewrites each `source` and `destination` is automatically prefixed to handle the configured `locales` unless you add `locale: false` to the rewrite. If `locale: false` is used you must prefix the `source` and `destination` with a locale for it to be matched correctly.
 
 ```js
 module.exports = {

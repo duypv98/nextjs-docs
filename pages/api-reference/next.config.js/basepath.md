@@ -46,14 +46,14 @@ export default function HomePage() {
 Output html:
 
 ```html
-<a href="/docs/about">About Page</a>
+<a href="/about">About Page</a>
 ```
 
 This makes sure that you don't have to change all links in your application when changing the `basePath` value.
 
 ## Images
 
-When using the [`next/image`](/docs/api-reference/next/image.md) component, you will need to add the `basePath` in front of `src`.
+When using the [`next/image`](/api-reference/next/image) component, you will need to add the `basePath` in front of `src`.
 
 For example, using `/docs/me.png` will properly serve your image when `basePath` is set to `/docs`.
 

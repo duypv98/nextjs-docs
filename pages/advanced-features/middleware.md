@@ -17,7 +17,7 @@ description: Learn how to use Middleware to run code before a request is complet
 
 Middleware allows you to run code before a request is completed, then based on the incoming request, you can modify the response by rewriting, redirecting, adding headers, or setting cookies.
 
-Middleware runs _before_ cached content, so you can personalize static files and pages. Common examples of Middleware would be authentication, A/B testing, localized pages, bot protection, and more. Regarding localized pages, you can start with [i18n routing](/docs/advanced-features/i18n-routing) and implement Middleware for more advanced use cases.
+Middleware runs _before_ cached content, so you can personalize static files and pages. Common examples of Middleware would be authentication, A/B testing, localized pages, bot protection, and more. Regarding localized pages, you can start with [i18n routing](/advanced-features/i18n-routing) and implement Middleware for more advanced use cases.
 
 > **Note:** If you were using Middleware prior to `12.2`, please see the [upgrade guide](https://nextjs.org/docs/messages/middleware-upgrade-guide).
 
@@ -50,7 +50,7 @@ export const config = {
 }
 ```
 
-> **Note** the `pageExtensions` config affects middleware as well, [see related documentation here](/docs/api-reference/next.config.js/custom-page-extensions.md).
+> **Note** the `pageExtensions` config affects middleware as well, [see related documentation here](/api-reference/next.config.js/custom-page-extensions).
 
 ## Matching Paths
 
@@ -145,7 +145,7 @@ The [`NextResponse`](#nextresponse) API allows you to:
 - Set response cookies
 - Set response headers
 
-To produce a response from Middleware, you should `rewrite` to a route ([Page](/docs/basic-features/pages.md) or [Edge API Route](/docs/api-routes/edge-api-routes.md)) that produces a response.
+To produce a response from Middleware, you should `rewrite` to a route ([Page](/basic-features/pages) or [Edge API Route](/api-routes/edge-api-routes)) that produces a response.
 
 ## Using Cookies
 
@@ -182,21 +182,21 @@ export function middleware(request: NextRequest) {
 ## Related
 
 <div class="card">
-  <a href="/docs/api-reference/edge-runtime.md">
+  <a href="/api-reference/edge-runtime">
     <b>Edge Runtime</b>
     <small>Learn more about the supported Web APIs available.</small>
   </a>
 </div>
 
 <div class="card">
-  <a href="/docs/api-reference/next/server.md">
+  <a href="/api-reference/next/server">
     <b>Middleware API Reference</b>
     <small>Learn more about the supported APIs for Middleware.</small>
   </a>
 </div>
 
 <div class="card">
-  <a href="/docs/api-routes/edge-api-routes.md">
+  <a href="/api-routes/edge-api-routes">
     <b>Edge API Routes</b>
     <small>Build high performance APIs in Next.js. </small>
   </a>

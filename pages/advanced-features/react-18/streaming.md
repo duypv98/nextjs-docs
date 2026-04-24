@@ -10,7 +10,7 @@ All SSR pages have the ability to render components into streams and the client 
 
 As an added bonus, in streaming SSR mode the client will also use selective hydration to prioritize component hydration based on user interactions, further improving performance.
 
-For non-SSR pages, all Suspense boundaries will still be [statically optimized](/docs/advanced-features/automatic-static-optimization.md).
+For non-SSR pages, all Suspense boundaries will still be [statically optimized](/advanced-features/automatic-static-optimization).
 
 ## Streaming Features
 
@@ -18,7 +18,7 @@ For non-SSR pages, all Suspense boundaries will still be [statically optimized](
 
 Next.js supports lazy loading external libraries with `import()` and React components with `next/dynamic`. Deferred loading helps improve the initial loading performance by decreasing the amount of JavaScript necessary to render the page. Components or libraries are only imported and included in the JavaScript bundle when they're used.
 
-Read more about how to use [`next/dynamic`](/docs/advanced-features/dynamic-import.md).
+Read more about how to use [`next/dynamic`](/advanced-features/dynamic-import).
 
 ## Important Notes
 
@@ -35,8 +35,8 @@ Data fetching within `Suspense` boundaries is currently only supported on the cl
 The following solutions are compatible with Next.js streaming:
 
 - Inline Styles
-- [Global Stylesheets](/docs/basic-features/built-in-css-support.md#adding-a-global-stylesheet)
-- [CSS Modules](/docs/basic-features/built-in-css-support.md#adding-component-level-css)
-- [styled-jsx](/docs/basic-features/built-in-css-support.md#css-in-js)
+- [Global Stylesheets](/basic-features/built-in-css-support#adding-a-global-stylesheet)
+- [CSS Modules](/basic-features/built-in-css-support#adding-component-level-css)
+- [styled-jsx](/basic-features/built-in-css-support#css-in-js)
 
 CSS-in-JS solutions like `styled-components` and `emotion` are currently not compatible with streaming. For library authors, check out the [upgrade guide](https://github.com/reactwg/react-18/discussions/110) to learn more.

@@ -22,7 +22,7 @@ In addition, to reduce bundle size, Next.js will only load these polyfills for b
 
 If your own code or any external npm dependencies require features not supported by your target browsers (such as IE 11), you need to add polyfills yourself.
 
-In this case, you should add a top-level import for the **specific polyfill** you need in your [Custom `<App>`](/docs/advanced-features/custom-app.md) or the individual component.
+In this case, you should add a top-level import for the **specific polyfill** you need in your [Custom `<App>`](/advanced-features/custom-app) or the individual component.
 
 ## JavaScript Language Features
 
@@ -42,8 +42,8 @@ In addition to `fetch()` on the client-side, Next.js polyfills `fetch()` in the 
 
 ### TypeScript Features
 
-Next.js has built-in TypeScript support. [Learn more here](/docs/basic-features/typescript.md).
+Next.js has built-in TypeScript support. [Learn more here](/basic-features/typescript).
 
 ### Customizing Babel Config (Advanced)
 
-You can customize babel configuration. [Learn more here](/docs/advanced-features/customizing-babel-config.md).
+You can customize babel configuration. [Learn more here](/advanced-features/customizing-babel-config).

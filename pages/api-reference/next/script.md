@@ -25,7 +25,7 @@ description: Optimize loading of third-party scripts with the built-in Script co
 
 </details>
 
-> **Note: This is API documentation for the Script Component. For a feature overview and usage information for scripts in Next.js, please see [Script Optimization](/docs/basic-features/script.md).**
+> **Note: This is API documentation for the Script Component. For a feature overview and usage information for scripts in Next.js, please see [Script Optimization](/basic-features/script).**
 
 ## Optional Props
 
@@ -44,7 +44,7 @@ The loading strategy of the script.
 | `lazyOnload`        | Load script during browser idle time                       |
 | `worker`            | Load script in a web worker                                |
 
-> **Note: `worker` is an experimental strategy that can only be used when enabled in `next.config.js`. See [Off-loading Scripts To A Web Worker](/docs/basic-features/script#off-loading-scripts-to-a-web-worker-experimental).**
+> **Note: `worker` is an experimental strategy that can only be used when enabled in `next.config.js`. See [Off-loading Scripts To A Web Worker](/basic-features/script#off-loading-scripts-to-a-web-worker-experimental).**
 
 ### onLoad
 

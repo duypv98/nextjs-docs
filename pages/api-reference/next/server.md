@@ -4,13 +4,13 @@ description: Learn about the server-only helpers for Middleware and Edge API Rou
 
 # next/server
 
-`next/server` provides server-only helpers for use in [Middleware](/docs/middleware.md) and [Edge API Routes](/docs/api-routes/edge-api-routes.md).
+`next/server` provides server-only helpers for use in [Middleware](/middleware) and [Edge API Routes](/api-routes/edge-api-routes).
 
 ## NextRequest
 
 The `NextRequest` object is an extension of the native [`Request`](https://developer.mozilla.org/en-US/docs/Web/API/Request) interface, with the following added methods and properties:
 
-- `cookies` - A [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) with cookies from the `Request`. See [Using cookies in Middleware](/docs/advanced-features/middleware#using-cookies)
+- `cookies` - A [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) with cookies from the `Request`. See [Using cookies in Middleware](/advanced-features/middleware#using-cookies)
 - `nextUrl`: Includes an extended, parsed, URL object that gives you access to Next.js specific properties such as `pathname`, `basePath`, `trailingSlash` and `i18n`. Includes the following properties:
   - `basePath` (`string`)
   - `buildId` (`string || undefined`)
@@ -150,7 +150,7 @@ If you want to cause a `GET` response to a `POST` request, use `303`.
 
 ### How do I access Environment Variables?
 
-`process.env` can be used to access [Environment Variables](/docs/basic-features/environment-variables.md) from Edge Middleware. They are evaluated during `next build`:
+`process.env` can be used to access [Environment Variables](/basic-features/environment-variables) from Edge Middleware. They are evaluated during `next build`:
 
 | Works                                                        | Does **not** work                          |
 | ------------------------------------------------------------ | ------------------------------------------ |
@@ -161,14 +161,14 @@ If you want to cause a `GET` response to a `POST` request, use `303`.
 ## Related
 
 <div class="card">
-  <a href="/docs/api-reference/edge-runtime.md">
+  <a href="/api-reference/edge-runtime">
     <b>Edge Runtime</b>
     <small>Learn more about the supported Web APIs available.</small>
   </a>
 </div>
 
 <div class="card">
-  <a href="/docs/middleware.md">
+  <a href="/middleware">
     <b>Middleware</b>
     <small>Run code before a request is completed.</small>
   </a>

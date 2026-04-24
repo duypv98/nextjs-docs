@@ -22,7 +22,7 @@ Next.js helps you optimize loading web fonts by inlining font CSS during `next b
 
 ## Usage
 
-To add a web font to your Next.js application, add the font to a [Custom `Document`](/docs/advanced-features/custom-document.md).
+To add a web font to your Next.js application, add the font to a [Custom `Document`](/advanced-features/custom-document).
 
 ```js
 // pages/_document.js
@@ -47,7 +47,7 @@ export default function Document() {
 }
 ```
 
-Adding fonts to `_document` is preferred over individual pages. When adding fonts to a single page with [`next/head`](/docs/api-reference/next/head.md), font optimizations included by Next.js will not work on navigations between pages client-side or when using [streaming](/docs/advanced-features/react-18/streaming.md).
+Adding fonts to `_document` is preferred over individual pages. When adding fonts to a single page with [`next/head`](/api-reference/next/head), font optimizations included by Next.js will not work on navigations between pages client-side or when using [streaming](/advanced-features/react-18/streaming).
 
 Next.js currently supports optimizing Google Fonts and Typekit, with support for other font providers coming soon. We're also planning to add control over [loading strategies](https://github.com/vercel/next.js/issues/21555) and `font-display` values. See [Google Font Display](https://nextjs.org/docs/messages/google-font-display) for more information.
 
@@ -70,7 +70,7 @@ module.exports = {
 For more information on what to do next, we recommend the following sections:
 
 <div class="card">
-  <a href="/docs/advanced-features/custom-document.md">
+  <a href="/advanced-features/custom-document">
     <b>Custom Document</b>
     <small>Learn how to augment your application's html and body tags.</small>
   </a>

@@ -26,12 +26,12 @@ export default function handler(req, res) {
 }
 ```
 
-> **Note**: API Routes will be affected by [`pageExtensions` configuration](/docs/api-reference/next.config.js/custom-page-extensions.md) in `next.config.js`.
+> **Note**: API Routes will be affected by [`pageExtensions` configuration](/api-reference/next.config.js/custom-page-extensions) in `next.config.js`.
 
 For an API route to work, you need to export a function as default (a.k.a **request handler**), which then receives the following parameters:
 
-- `req`: An instance of [http.IncomingMessage](https://nodejs.org/api/http.html#class-httpincomingmessage), plus some [pre-built middlewares](/docs/api-routes/request-helpers.md)
-- `res`: An instance of [http.ServerResponse](https://nodejs.org/api/http.html#class-httpserverresponse), plus some [helper functions](/docs/api-routes/response-helpers.md)
+- `req`: An instance of [http.IncomingMessage](https://nodejs.org/api/http.html#class-httpincomingmessage), plus some [pre-built middlewares](/api-routes/request-helpers)
+- `res`: An instance of [http.ServerResponse](https://nodejs.org/api/http.html#class-httpserverresponse), plus some [helper functions](/api-routes/response-helpers)
 
 To handle different HTTP methods in an API route, you can use `req.method` in your request handler, like so:
 
@@ -52,33 +52,33 @@ To fetch API endpoints, take a look into any of the examples at the start of thi
 For new projects, you can build your entire API with API Routes. If you have an existing API, you do not need to forward calls to the API through an API Route. Some other use cases for API Routes are:
 
 - Masking the URL of an external service (e.g. `/api/secret` instead of `https://company.com/secret-url`)
-- Using [Environment Variables](/docs/basic-features/environment-variables.md) on the server to securely access external services.
+- Using [Environment Variables](/basic-features/environment-variables) on the server to securely access external services.
 
 ## Caveats
 
 - API Routes [do not specify CORS headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS), meaning they are **same-origin only** by default. You can customize such behavior by wrapping the request handler with the [CORS request helpers](https://github.com/vercel/next.js/tree/canary/examples/api-routes-cors).
-- API Routes can't be used with [`next export`](/docs/advanced-features/static-html-export.md)
+- API Routes can't be used with [`next export`](/advanced-features/static-html-export)
 
 ## Related
 
 For more information on what to do next, we recommend the following sections:
 
 <div class="card">
-  <a href="/docs/api-routes/request-helpers.md">
+  <a href="/api-routes/request-helpers">
     <b>API Routes Request Helpers:</b>
     <small>learn about the built-in helpers for the request.</small>
   </a>
 </div>
 
 <div class="card">
-  <a href="/docs/api-routes/response-helpers.md">
+  <a href="/api-routes/response-helpers">
     <b>Response Helpers:</b>
     <small>learn about the built-in methods for the response.</small>
   </a>
 </div>
 
 <div class="card">
-  <a href="/docs/basic-features/typescript.md#api-routes">
+  <a href="/basic-features/typescript#api-routes">
     <b>TypeScript:</b>
     <small>Add TypeScript to your API Routes.</small>
   </a>

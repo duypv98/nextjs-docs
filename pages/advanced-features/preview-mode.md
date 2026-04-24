@@ -29,7 +29,7 @@ description: Next.js has the preview mode for statically generated pages. You ca
   </ul>
 </details>
 
-In the [Pages documentation](/docs/basic-features/pages.md) and the [Data Fetching documentation](/docs/basic-features/data-fetching/overview.md), we talked about how to pre-render a page at build time (**Static Generation**) using `getStaticProps` and `getStaticPaths`.
+In the [Pages documentation](/basic-features/pages) and the [Data Fetching documentation](/basic-features/data-fetching/overview), we talked about how to pre-render a page at build time (**Static Generation**) using `getStaticProps` and `getStaticPaths`.
 
 Static Generation is useful when your pages fetch data from a headless CMS. However, it’s not ideal when you’re writing a draft on your headless CMS and want to **preview** the draft immediately on your page. You’d want Next.js to render these pages at **request time** instead of build time and fetch the draft content instead of the published content. You’d want Next.js to bypass Static Generation only for this specific case.
 
@@ -37,7 +37,7 @@ Next.js has a feature called **Preview Mode** which solves this problem. Here ar
 
 ## Step 1. Create and access a preview API route
 
-> Take a look at the [API Routes documentation](/docs/api-routes/introduction.md) first if you’re not familiar with Next.js API Routes.
+> Take a look at the [API Routes documentation](/api-routes/introduction) first if you’re not familiar with Next.js API Routes.
 
 First, create a **preview API route**. It can have any name - e.g. `pages/api/preview.js` (or `.ts` if using TypeScript).
 
@@ -173,7 +173,7 @@ https://<your-site>/api/preview?secret=<token>&slug=<path>
 
 ## More Details
 
-> **Note**: during rendering `next/router` exposes an `isPreview` flag, see the [router object docs](/docs/api-reference/next/router.md#router-object) for more info.
+> **Note**: during rendering `next/router` exposes an `isPreview` flag, see the [router object docs](/api-reference/next/router#router-object) for more info.
 
 ### Clear the Preview Mode cookies
 
@@ -189,7 +189,7 @@ export default function handler(req, res) {
 }
 ```
 
-Then, send a request to `/api/clear-preview-mode-cookies` to invoke the API Route. If calling this route using [`next/link`](/docs/api-reference/next/link.md), you must pass `prefetch={false}` to prevent calling `clearPreviewData` during link prefetching.
+Then, send a request to `/api/clear-preview-mode-cookies` to invoke the API Route. If calling this route using [`next/link`](/api-reference/next/link), you must pass `prefetch={false}` to prevent calling `clearPreviewData` during link prefetching.
 
 ### Specify the Preview Mode duration
 
@@ -237,21 +237,21 @@ This ensures that the bypass cookie can’t be guessed.
 The following pages might also be useful.
 
 <div class="card">
-  <a href="/docs/basic-features/data-fetching/overview.md">
+  <a href="/basic-features/data-fetching/overview">
     <b>Data Fetching:</b>
     <small>Learn more about data fetching in Next.js.</small>
   </a>
 </div>
 
 <div class="card">
-  <a href="/docs/api-routes/introduction.md">
+  <a href="/api-routes/introduction">
     <b>API Routes:</b>
     <small>Learn more about API routes in Next.js.</small>
   </a>
 </div>
 
 <div class="card">
-  <a href="/docs/api-reference/next.config.js/environment-variables.md">
+  <a href="/api-reference/next.config.js/environment-variables">
     <b>Environment Variables:</b>
     <small>Learn more about environment variables in Next.js.</small>
   </a>

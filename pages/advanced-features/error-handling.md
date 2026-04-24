@@ -16,11 +16,11 @@ Here is an example of an overlay:
 
 ## Handling Server Errors
 
-Next.js provides a static 500 page by default to handle server-side errors that occur in your application. You can also [customize this page](/docs/advanced-features/custom-error-page#customizing-the-500-page) by creating a `pages/500.js` file.
+Next.js provides a static 500 page by default to handle server-side errors that occur in your application. You can also [customize this page](/advanced-features/custom-error-page#customizing-the-500-page) by creating a `pages/500.js` file.
 
 Having a 500 page in your application does not show specific errors to the app user.
 
-You can also use [404 page](/docs/advanced-features/custom-error-page#404-page) to handle specific runtime error like `file not found`.
+You can also use [404 page](/advanced-features/custom-error-page#404-page) to handle specific runtime error like `file not found`.
 
 ## Handling Client Errors
 

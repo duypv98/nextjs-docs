@@ -14,7 +14,7 @@ For example, large dependencies that previously would impact the JavaScript bund
 
 ## React Server Components vs Server-Side Rendering
 
-[Server-side Rendering](/docs/basic-features/pages.md#server-side-rendering) (SSR) dynamically builds your application into HTML on the server. This creates faster load times for users by offloading work from the user's device to the server, especially those with slower internet connections or older devices. However, developers still pay the cost to download, parse, and hydrate those components after the initial HTML loads.
+[Server-side Rendering](/basic-features/pages#server-side-rendering) (SSR) dynamically builds your application into HTML on the server. This creates faster load times for users by offloading work from the user's device to the server, especially those with slower internet connections or older devices. However, developers still pay the cost to download, parse, and hydrate those components after the initial HTML loads.
 
 React Server Components, combined with Next.js server-side rendering, help eliminate the tradeoff of all-or-nothing data fetching. You can progressively show updates as your data comes in.
 

@@ -148,7 +148,7 @@ The `<Image />` component requires the following properties.
 
 Must be one of the following:
 
-1. A [statically imported](/docs/basic-features/image-optimization.md#local-images) image file, or
+1. A [statically imported](/basic-features/image-optimization#local-images) image file, or
 2. A path string. This can be either an absolute external URL,
    or an internal path depending on the [loader](#loader) prop.
 
@@ -158,13 +158,13 @@ When using an external URL, you must add it to [remotePatterns](#remote-patterns
 
 The `width` property represents the _rendered_ width in pixels, so it will affect how large the image appears.
 
-Required, except for [statically imported images](/docs/basic-features/image-optimization.md#local-images) or images with the [`fill` property](#fill).
+Required, except for [statically imported images](/basic-features/image-optimization#local-images) or images with the [`fill` property](#fill).
 
 ### height
 
 The `height` property represents the _rendered_ height in pixels, so it will affect how large the image appears.
 
-Required, except for [statically imported images](/docs/basic-features/image-optimization.md#local-images) or images with the [`fill` property](#fill).
+Required, except for [statically imported images](/basic-features/image-optimization#local-images) or images with the [`fill` property](#fill).
 
 ### alt
 
@@ -281,7 +281,7 @@ Should only be used when the image is visible above the fold. Defaults to `false
 
 A placeholder to use while the image is loading. Possible values are `blur` or `empty`. Defaults to `empty`.
 
-When `blur`, the [`blurDataURL`](#blurdataurl) property will be used as the placeholder. If `src` is an object from a [static import](/docs/basic-features/image-optimization.md#local-images) and the imported image is `.jpg`, `.png`, `.webp`, or `.avif`, then `blurDataURL` will be automatically populated.
+When `blur`, the [`blurDataURL`](#blurdataurl) property will be used as the placeholder. If `src` is an object from a [static import](/basic-features/image-optimization#local-images) and the imported image is `.jpg`, `.png`, `.webp`, or `.avif`, then `blurDataURL` will be automatically populated.
 
 For dynamic images, you must provide the [`blurDataURL`](#blurdataurl) property. Solutions such as [Plaiceholder](https://github.com/joe-bell/plaiceholder) can help with `base64` generation.
 
@@ -528,7 +528,7 @@ The expiration (or rather Max Age) is defined by either the [`minimumCacheTTL`](
 
 ### Minimum Cache TTL
 
-You can configure the Time to Live (TTL) in seconds for cached optimized images. In many cases, it's better to use a [Static Image Import](/docs/basic-features/image-optimization.md#local-images) which will automatically hash the file contents and cache the image forever with a `Cache-Control` header of `immutable`.
+You can configure the Time to Live (TTL) in seconds for cached optimized images. In many cases, it's better to use a [Static Image Import](/basic-features/image-optimization#local-images) which will automatically hash the file contents and cache the image forever with a `Cache-Control` header of `immutable`.
 
 ```js
 module.exports = {
@@ -540,7 +540,7 @@ module.exports = {
 
 The expiration (or rather Max Age) of the optimized image is defined by either the `minimumCacheTTL` or the upstream image `Cache-Control` header, whichever is larger.
 
-If you need to change the caching behavior per image, you can configure [`headers`](/docs/api-reference/next.config.js/headers) to set the `Cache-Control` header on the upstream image (e.g. `/some-asset.jpg`, not `/_next/image` itself).
+If you need to change the caching behavior per image, you can configure [`headers`](/api-reference/next.config.js/headers) to set the `Cache-Control` header on the upstream image (e.g. `/some-asset.jpg`, not `/_next/image` itself).
 
 There is no mechanism to invalidate the cache at this time, so its best to keep `minimumCacheTTL` low. Otherwise you may need to manually change the [`src`](#src) prop or delete `<distDir>/cache/images`.
 
@@ -562,7 +562,7 @@ module.exports = {
 
 ### Dangerously Allow SVG
 
-The default [loader](#loader) does not optimize SVG images for a few reasons. First, SVG is a vector format meaning it can be resized losslessly. Second, SVG has many of the same features as HTML/CSS, which can lead to vulnerabilities without proper [Content Security Policy (CSP) headers](/docs/advanced-features/security-headers.md).
+The default [loader](#loader) does not optimize SVG images for a few reasons. First, SVG is a vector format meaning it can be resized losslessly. Second, SVG has many of the same features as HTML/CSS, which can lead to vulnerabilities without proper [Content Security Policy (CSP) headers](/advanced-features/security-headers).
 
 If you need to serve SVG images with the default Image Optimization API, you can set `dangerouslyAllowSVG` and `contentSecurityPolicy` inside your `next.config.js`:
 
@@ -586,7 +586,7 @@ Auto-detection for animated files is best-effort and supports GIF, APNG, and Web
 For an overview of the Image component features and usage guidelines, see:
 
 <div class="card">
-  <a href="/docs/basic-features/image-optimization.md">
+  <a href="/basic-features/image-optimization">
     <b>Images</b>
     <small>Learn how to display and optimize images with the Image component.</small>
   </a>

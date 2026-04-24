@@ -5,24 +5,9 @@
     "label": "Pages",
     "pages": [
       {
-        "href": "/accessibility",
-        "path": "accessibility.md",
-        "title": "Accessibility"
-      },
-      {
-        "href": "/authentication",
-        "path": "authentication.md",
-        "title": "Authentication"
-      },
-      {
-        "href": "/deployment",
-        "path": "deployment.md",
-        "title": "Deployment"
-      },
-      {
-        "href": "/faq",
-        "path": "faq.md",
-        "title": "Faq"
+        "href": "/",
+        "path": "index.md",
+        "title": "Home"
       },
       {
         "href": "/getting-started",
@@ -35,9 +20,24 @@
         "title": "Going To Production"
       },
       {
-        "href": "/",
-        "path": "index.md",
-        "title": "Home"
+        "href": "/deployment",
+        "path": "deployment.md",
+        "title": "Deployment"
+      },
+      {
+        "href": "/authentication",
+        "path": "authentication.md",
+        "title": "Authentication"
+      },
+      {
+        "href": "/accessibility",
+        "path": "accessibility.md",
+        "title": "Accessibility"
+      },
+      {
+        "href": "/faq",
+        "path": "faq.md",
+        "title": "Faq"
       },
       {
         "href": "/testing",
@@ -52,19 +52,182 @@
     ],
     "subfolders": [
       {
+        "id": "basic-features",
+        "pathSegment": "basic-features",
+        "label": "Basic Features",
+        "pages": [
+          {
+            "href": "/basic-features/pages",
+            "path": "basic-features/pages.md",
+            "title": "Pages"
+          },
+          {
+            "href": "/basic-features/layouts",
+            "path": "basic-features/layouts.md",
+            "title": "Layouts"
+          },
+          {
+            "href": "/basic-features/fast-refresh",
+            "path": "basic-features/fast-refresh.md",
+            "title": "Fast Refresh"
+          },
+          {
+            "href": "/basic-features/built-in-css-support",
+            "path": "basic-features/built-in-css-support.md",
+            "title": "Built In Css Support"
+          },
+          {
+            "href": "/basic-features/image-optimization",
+            "path": "basic-features/image-optimization.md",
+            "title": "Image Optimization"
+          },
+          {
+            "href": "/basic-features/font-optimization",
+            "path": "basic-features/font-optimization.md",
+            "title": "Font Optimization"
+          },
+          {
+            "href": "/basic-features/script",
+            "path": "basic-features/script.md",
+            "title": "Script"
+          },
+          {
+            "href": "/basic-features/static-file-serving",
+            "path": "basic-features/static-file-serving.md",
+            "title": "Static File Serving"
+          },
+          {
+            "href": "/basic-features/environment-variables",
+            "path": "basic-features/environment-variables.md",
+            "title": "Environment Variables"
+          },
+          {
+            "href": "/basic-features/typescript",
+            "path": "basic-features/typescript.md",
+            "title": "Typescript"
+          },
+          {
+            "href": "/basic-features/eslint",
+            "path": "basic-features/eslint.md",
+            "title": "Eslint"
+          },
+          {
+            "href": "/basic-features/supported-browsers-features",
+            "path": "basic-features/supported-browsers-features.md",
+            "title": "Supported Browsers Features"
+          }
+        ],
+        "subfolders": [
+          {
+            "id": "basic-features/data-fetching",
+            "pathSegment": "data-fetching",
+            "label": "Data Fetching",
+            "pages": [
+              {
+                "href": "/basic-features/data-fetching/overview",
+                "path": "basic-features/data-fetching/overview.md",
+                "title": "Overview"
+              },
+              {
+                "href": "/basic-features/data-fetching/get-static-props",
+                "path": "basic-features/data-fetching/get-static-props.md",
+                "title": "Get Static Props"
+              },
+              {
+                "href": "/basic-features/data-fetching/get-static-paths",
+                "path": "basic-features/data-fetching/get-static-paths.md",
+                "title": "Get Static Paths"
+              },
+              {
+                "href": "/basic-features/data-fetching/get-server-side-props",
+                "path": "basic-features/data-fetching/get-server-side-props.md",
+                "title": "Get Server Side Props"
+              },
+              {
+                "href": "/basic-features/data-fetching/client-side",
+                "path": "basic-features/data-fetching/client-side.md",
+                "title": "Client Side"
+              },
+              {
+                "href": "/basic-features/data-fetching/incremental-static-regeneration",
+                "path": "basic-features/data-fetching/incremental-static-regeneration.md",
+                "title": "Incremental Static Regeneration"
+              }
+            ],
+            "subfolders": []
+          }
+        ]
+      },
+      {
+        "id": "routing",
+        "pathSegment": "routing",
+        "label": "Routing",
+        "pages": [
+          {
+            "href": "/routing/introduction",
+            "path": "routing/introduction.md",
+            "title": "Introduction"
+          },
+          {
+            "href": "/routing/dynamic-routes",
+            "path": "routing/dynamic-routes.md",
+            "title": "Dynamic Routes"
+          },
+          {
+            "href": "/routing/imperatively",
+            "path": "routing/imperatively.md",
+            "title": "Imperatively"
+          },
+          {
+            "href": "/routing/shallow-routing",
+            "path": "routing/shallow-routing.md",
+            "title": "Shallow Routing"
+          }
+        ],
+        "subfolders": []
+      },
+      {
+        "id": "api-routes",
+        "pathSegment": "api-routes",
+        "label": "Api Routes",
+        "pages": [
+          {
+            "href": "/api-routes/introduction",
+            "path": "api-routes/introduction.md",
+            "title": "Introduction"
+          },
+          {
+            "href": "/api-routes/dynamic-api-routes",
+            "path": "api-routes/dynamic-api-routes.md",
+            "title": "Dynamic Api Routes"
+          },
+          {
+            "href": "/api-routes/edge-api-routes",
+            "path": "api-routes/edge-api-routes.md",
+            "title": "Edge Api Routes"
+          },
+          {
+            "href": "/api-routes/request-helpers",
+            "path": "api-routes/request-helpers.md",
+            "title": "Request Helpers"
+          },
+          {
+            "href": "/api-routes/response-helpers",
+            "path": "api-routes/response-helpers.md",
+            "title": "Response Helpers"
+          }
+        ],
+        "subfolders": []
+      },
+      {
         "id": "advanced-features",
         "pathSegment": "advanced-features",
         "label": "Advanced Features",
         "pages": [
           {
-            "href": "/advanced-features/automatic-static-optimization",
-            "path": "advanced-features/automatic-static-optimization.md",
-            "title": "Automatic Static Optimization"
-          },
-          {
-            "href": "/advanced-features/ci-build-caching",
-            "path": "advanced-features/ci-build-caching.md",
-            "title": "Ci Build Caching"
+            "href": "/advanced-features/compiler",
+            "path": "advanced-features/compiler.md",
+            "title": "Compiler"
           },
           {
             "href": "/advanced-features/codemods",
@@ -72,9 +235,14 @@
             "title": "Codemods"
           },
           {
-            "href": "/advanced-features/compiler",
-            "path": "advanced-features/compiler.md",
-            "title": "Compiler"
+            "href": "/advanced-features/automatic-static-optimization",
+            "path": "advanced-features/automatic-static-optimization.md",
+            "title": "Automatic Static Optimization"
+          },
+          {
+            "href": "/advanced-features/static-html-export",
+            "path": "advanced-features/static-html-export.md",
+            "title": "Static Html Export"
           },
           {
             "href": "/advanced-features/custom-app",
@@ -97,6 +265,71 @@
             "title": "Custom Server"
           },
           {
+            "href": "/advanced-features/middleware",
+            "path": "advanced-features/middleware.md",
+            "title": "Middleware"
+          },
+          {
+            "href": "/advanced-features/i18n-routing",
+            "path": "advanced-features/i18n-routing.md",
+            "title": "I18n Routing"
+          },
+          {
+            "href": "/advanced-features/preview-mode",
+            "path": "advanced-features/preview-mode.md",
+            "title": "Preview Mode"
+          },
+          {
+            "href": "/advanced-features/dynamic-import",
+            "path": "advanced-features/dynamic-import.md",
+            "title": "Dynamic Import"
+          },
+          {
+            "href": "/advanced-features/multi-zones",
+            "path": "advanced-features/multi-zones.md",
+            "title": "Multi Zones"
+          },
+          {
+            "href": "/advanced-features/src-directory",
+            "path": "advanced-features/src-directory.md",
+            "title": "Src Directory"
+          },
+          {
+            "href": "/advanced-features/output-file-tracing",
+            "path": "advanced-features/output-file-tracing.md",
+            "title": "Output File Tracing"
+          },
+          {
+            "href": "/advanced-features/measuring-performance",
+            "path": "advanced-features/measuring-performance.md",
+            "title": "Measuring Performance"
+          },
+          {
+            "href": "/advanced-features/security-headers",
+            "path": "advanced-features/security-headers.md",
+            "title": "Security Headers"
+          },
+          {
+            "href": "/advanced-features/error-handling",
+            "path": "advanced-features/error-handling.md",
+            "title": "Error Handling"
+          },
+          {
+            "href": "/advanced-features/debugging",
+            "path": "advanced-features/debugging.md",
+            "title": "Debugging"
+          },
+          {
+            "href": "/advanced-features/source-maps",
+            "path": "advanced-features/source-maps.md",
+            "title": "Source Maps"
+          },
+          {
+            "href": "/advanced-features/ci-build-caching",
+            "path": "advanced-features/ci-build-caching.md",
+            "title": "Ci Build Caching"
+          },
+          {
             "href": "/advanced-features/customizing-babel-config",
             "path": "advanced-features/customizing-babel-config.md",
             "title": "Customizing Babel Config"
@@ -107,74 +340,9 @@
             "title": "Customizing Postcss Config"
           },
           {
-            "href": "/advanced-features/debugging",
-            "path": "advanced-features/debugging.md",
-            "title": "Debugging"
-          },
-          {
-            "href": "/advanced-features/dynamic-import",
-            "path": "advanced-features/dynamic-import.md",
-            "title": "Dynamic Import"
-          },
-          {
-            "href": "/advanced-features/error-handling",
-            "path": "advanced-features/error-handling.md",
-            "title": "Error Handling"
-          },
-          {
-            "href": "/advanced-features/i18n-routing",
-            "path": "advanced-features/i18n-routing.md",
-            "title": "I18n Routing"
-          },
-          {
-            "href": "/advanced-features/measuring-performance",
-            "path": "advanced-features/measuring-performance.md",
-            "title": "Measuring Performance"
-          },
-          {
-            "href": "/advanced-features/middleware",
-            "path": "advanced-features/middleware.md",
-            "title": "Middleware"
-          },
-          {
             "href": "/advanced-features/module-path-aliases",
             "path": "advanced-features/module-path-aliases.md",
             "title": "Module Path Aliases"
-          },
-          {
-            "href": "/advanced-features/multi-zones",
-            "path": "advanced-features/multi-zones.md",
-            "title": "Multi Zones"
-          },
-          {
-            "href": "/advanced-features/output-file-tracing",
-            "path": "advanced-features/output-file-tracing.md",
-            "title": "Output File Tracing"
-          },
-          {
-            "href": "/advanced-features/preview-mode",
-            "path": "advanced-features/preview-mode.md",
-            "title": "Preview Mode"
-          },
-          {
-            "href": "/advanced-features/security-headers",
-            "path": "advanced-features/security-headers.md",
-            "title": "Security Headers"
-          },
-          {
-            "href": "/advanced-features/source-maps",
-            "path": "advanced-features/source-maps.md",
-            "title": "Source Maps"
-          },
-          {
-            "href": "/advanced-features/src-directory",
-            "path": "advanced-features/src-directory.md",
-            "title": "Src Directory"
-          },
-          {
-            "href": "/advanced-features/static-html-export",
-            "path": "advanced-features/static-html-export.md",
-            "title": "Static Html Export"
           },
           {
             "href": "/advanced-features/using-mdx",
@@ -183,39 +351,6 @@
           }
         ],
         "subfolders": [
-          {
-            "id": "advanced-features/amp-support",
-            "pathSegment": "amp-support",
-            "label": "Amp Support",
-            "pages": [
-              {
-                "href": "/advanced-features/amp-support/adding-amp-components",
-                "path": "advanced-features/amp-support/adding-amp-components.md",
-                "title": "Adding Amp Components"
-              },
-              {
-                "href": "/advanced-features/amp-support/amp-in-static-html-export",
-                "path": "advanced-features/amp-support/amp-in-static-html-export.md",
-                "title": "Amp In Static Html Export"
-              },
-              {
-                "href": "/advanced-features/amp-support/amp-validation",
-                "path": "advanced-features/amp-support/amp-validation.md",
-                "title": "Amp Validation"
-              },
-              {
-                "href": "/advanced-features/amp-support/introduction",
-                "path": "advanced-features/amp-support/introduction.md",
-                "title": "Introduction"
-              },
-              {
-                "href": "/advanced-features/amp-support/typescript",
-                "path": "advanced-features/amp-support/typescript.md",
-                "title": "Typescript"
-              }
-            ],
-            "subfolders": []
-          },
           {
             "id": "advanced-features/react-18",
             "pathSegment": "react-18",
@@ -227,14 +362,14 @@
                 "title": "Overview"
               },
               {
-                "href": "/advanced-features/react-18/server-components",
-                "path": "advanced-features/react-18/server-components.md",
-                "title": "Server Components"
-              },
-              {
                 "href": "/advanced-features/react-18/streaming",
                 "path": "advanced-features/react-18/streaming.md",
                 "title": "Streaming"
+              },
+              {
+                "href": "/advanced-features/react-18/server-components",
+                "path": "advanced-features/react-18/server-components.md",
+                "title": "Server Components"
               },
               {
                 "href": "/advanced-features/react-18/switchable-runtime",
@@ -243,385 +378,36 @@
               }
             ],
             "subfolders": []
-          }
-        ]
-      },
-      {
-        "id": "api-reference",
-        "pathSegment": "api-reference",
-        "label": "Api Reference",
-        "pages": [
-          {
-            "href": "/api-reference/cli",
-            "path": "api-reference/cli.md",
-            "title": "Cli"
           },
           {
-            "href": "/api-reference/create-next-app",
-            "path": "api-reference/create-next-app.md",
-            "title": "Create Next App"
-          },
-          {
-            "href": "/api-reference/edge-runtime",
-            "path": "api-reference/edge-runtime.md",
-            "title": "Edge Runtime"
-          }
-        ],
-        "subfolders": [
-          {
-            "id": "api-reference/data-fetching",
-            "pathSegment": "data-fetching",
-            "label": "Data Fetching",
+            "id": "advanced-features/amp-support",
+            "pathSegment": "amp-support",
+            "label": "Amp Support",
             "pages": [
               {
-                "href": "/api-reference/data-fetching/get-initial-props",
-                "path": "api-reference/data-fetching/get-initial-props.md",
-                "title": "Get Initial Props"
-              },
-              {
-                "href": "/api-reference/data-fetching/get-server-side-props",
-                "path": "api-reference/data-fetching/get-server-side-props.md",
-                "title": "Get Server Side Props"
-              },
-              {
-                "href": "/api-reference/data-fetching/get-static-paths",
-                "path": "api-reference/data-fetching/get-static-paths.md",
-                "title": "Get Static Paths"
-              },
-              {
-                "href": "/api-reference/data-fetching/get-static-props",
-                "path": "api-reference/data-fetching/get-static-props.md",
-                "title": "Get Static Props"
-              }
-            ],
-            "subfolders": []
-          },
-          {
-            "id": "api-reference/next",
-            "pathSegment": "next",
-            "label": "Next",
-            "pages": [
-              {
-                "href": "/api-reference/next/amp",
-                "path": "api-reference/next/amp.md",
-                "title": "Amp"
-              },
-              {
-                "href": "/api-reference/next/head",
-                "path": "api-reference/next/head.md",
-                "title": "Head"
-              },
-              {
-                "href": "/api-reference/next/image",
-                "path": "api-reference/next/image.md",
-                "title": "Image"
-              },
-              {
-                "href": "/api-reference/next/link",
-                "path": "api-reference/next/link.md",
-                "title": "Link"
-              },
-              {
-                "href": "/api-reference/next/router",
-                "path": "api-reference/next/router.md",
-                "title": "Router"
-              },
-              {
-                "href": "/api-reference/next/script",
-                "path": "api-reference/next/script.md",
-                "title": "Script"
-              },
-              {
-                "href": "/api-reference/next/server",
-                "path": "api-reference/next/server.md",
-                "title": "Server"
-              }
-            ],
-            "subfolders": [
-              {
-                "id": "api-reference/next/future",
-                "pathSegment": "future",
-                "label": "Future",
-                "pages": [
-                  {
-                    "href": "/api-reference/next/future/image",
-                    "path": "api-reference/next/future/image.md",
-                    "title": "Image"
-                  }
-                ],
-                "subfolders": []
-              }
-            ]
-          },
-          {
-            "id": "api-reference/next.config.js",
-            "pathSegment": "next.config.js",
-            "label": "Next.config.js",
-            "pages": [
-              {
-                "href": "/api-reference/next.config.js/basepath",
-                "path": "api-reference/next.config.js/basepath.md",
-                "title": "Basepath"
-              },
-              {
-                "href": "/api-reference/next.config.js/build-indicator",
-                "path": "api-reference/next.config.js/build-indicator.md",
-                "title": "Build Indicator"
-              },
-              {
-                "href": "/api-reference/next.config.js/cdn-support-with-asset-prefix",
-                "path": "api-reference/next.config.js/cdn-support-with-asset-prefix.md",
-                "title": "Cdn Support With Asset Prefix"
-              },
-              {
-                "href": "/api-reference/next.config.js/compression",
-                "path": "api-reference/next.config.js/compression.md",
-                "title": "Compression"
-              },
-              {
-                "href": "/api-reference/next.config.js/configuring-onDemandEntries",
-                "path": "api-reference/next.config.js/configuring-onDemandEntries.md",
-                "title": "Configuring OnDemandEntries"
-              },
-              {
-                "href": "/api-reference/next.config.js/configuring-the-build-id",
-                "path": "api-reference/next.config.js/configuring-the-build-id.md",
-                "title": "Configuring The Build Id"
-              },
-              {
-                "href": "/api-reference/next.config.js/custom-page-extensions",
-                "path": "api-reference/next.config.js/custom-page-extensions.md",
-                "title": "Custom Page Extensions"
-              },
-              {
-                "href": "/api-reference/next.config.js/custom-webpack-config",
-                "path": "api-reference/next.config.js/custom-webpack-config.md",
-                "title": "Custom Webpack Config"
-              },
-              {
-                "href": "/api-reference/next.config.js/disabling-etag-generation",
-                "path": "api-reference/next.config.js/disabling-etag-generation.md",
-                "title": "Disabling Etag Generation"
-              },
-              {
-                "href": "/api-reference/next.config.js/disabling-http-keep-alive",
-                "path": "api-reference/next.config.js/disabling-http-keep-alive.md",
-                "title": "Disabling Http Keep Alive"
-              },
-              {
-                "href": "/api-reference/next.config.js/disabling-x-powered-by",
-                "path": "api-reference/next.config.js/disabling-x-powered-by.md",
-                "title": "Disabling X Powered By"
-              },
-              {
-                "href": "/api-reference/next.config.js/environment-variables",
-                "path": "api-reference/next.config.js/environment-variables.md",
-                "title": "Environment Variables"
-              },
-              {
-                "href": "/api-reference/next.config.js/exportPathMap",
-                "path": "api-reference/next.config.js/exportPathMap.md",
-                "title": "ExportPathMap"
-              },
-              {
-                "href": "/api-reference/next.config.js/headers",
-                "path": "api-reference/next.config.js/headers.md",
-                "title": "Headers"
-              },
-              {
-                "href": "/api-reference/next.config.js/ignoring-eslint",
-                "path": "api-reference/next.config.js/ignoring-eslint.md",
-                "title": "Ignoring Eslint"
-              },
-              {
-                "href": "/api-reference/next.config.js/ignoring-typescript-errors",
-                "path": "api-reference/next.config.js/ignoring-typescript-errors.md",
-                "title": "Ignoring Typescript Errors"
-              },
-              {
-                "href": "/api-reference/next.config.js/introduction",
-                "path": "api-reference/next.config.js/introduction.md",
+                "href": "/advanced-features/amp-support/introduction",
+                "path": "advanced-features/amp-support/introduction.md",
                 "title": "Introduction"
               },
               {
-                "href": "/api-reference/next.config.js/react-strict-mode",
-                "path": "api-reference/next.config.js/react-strict-mode.md",
-                "title": "React Strict Mode"
+                "href": "/advanced-features/amp-support/adding-amp-components",
+                "path": "advanced-features/amp-support/adding-amp-components.md",
+                "title": "Adding Amp Components"
               },
               {
-                "href": "/api-reference/next.config.js/redirects",
-                "path": "api-reference/next.config.js/redirects.md",
-                "title": "Redirects"
+                "href": "/advanced-features/amp-support/amp-validation",
+                "path": "advanced-features/amp-support/amp-validation.md",
+                "title": "Amp Validation"
               },
               {
-                "href": "/api-reference/next.config.js/rewrites",
-                "path": "api-reference/next.config.js/rewrites.md",
-                "title": "Rewrites"
+                "href": "/advanced-features/amp-support/amp-in-static-html-export",
+                "path": "advanced-features/amp-support/amp-in-static-html-export.md",
+                "title": "Amp In Static Html Export"
               },
               {
-                "href": "/api-reference/next.config.js/runtime-configuration",
-                "path": "api-reference/next.config.js/runtime-configuration.md",
-                "title": "Runtime Configuration"
-              },
-              {
-                "href": "/api-reference/next.config.js/setting-a-custom-build-directory",
-                "path": "api-reference/next.config.js/setting-a-custom-build-directory.md",
-                "title": "Setting A Custom Build Directory"
-              },
-              {
-                "href": "/api-reference/next.config.js/static-optimization-indicator",
-                "path": "api-reference/next.config.js/static-optimization-indicator.md",
-                "title": "Static Optimization Indicator"
-              },
-              {
-                "href": "/api-reference/next.config.js/trailing-slash",
-                "path": "api-reference/next.config.js/trailing-slash.md",
-                "title": "Trailing Slash"
-              },
-              {
-                "href": "/api-reference/next.config.js/url-imports",
-                "path": "api-reference/next.config.js/url-imports.md",
-                "title": "Url Imports"
-              }
-            ],
-            "subfolders": []
-          }
-        ]
-      },
-      {
-        "id": "api-routes",
-        "pathSegment": "api-routes",
-        "label": "Api Routes",
-        "pages": [
-          {
-            "href": "/api-routes/dynamic-api-routes",
-            "path": "api-routes/dynamic-api-routes.md",
-            "title": "Dynamic Api Routes"
-          },
-          {
-            "href": "/api-routes/edge-api-routes",
-            "path": "api-routes/edge-api-routes.md",
-            "title": "Edge Api Routes"
-          },
-          {
-            "href": "/api-routes/introduction",
-            "path": "api-routes/introduction.md",
-            "title": "Introduction"
-          },
-          {
-            "href": "/api-routes/request-helpers",
-            "path": "api-routes/request-helpers.md",
-            "title": "Request Helpers"
-          },
-          {
-            "href": "/api-routes/response-helpers",
-            "path": "api-routes/response-helpers.md",
-            "title": "Response Helpers"
-          }
-        ],
-        "subfolders": []
-      },
-      {
-        "id": "basic-features",
-        "pathSegment": "basic-features",
-        "label": "Basic Features",
-        "pages": [
-          {
-            "href": "/basic-features/built-in-css-support",
-            "path": "basic-features/built-in-css-support.md",
-            "title": "Built In Css Support"
-          },
-          {
-            "href": "/basic-features/environment-variables",
-            "path": "basic-features/environment-variables.md",
-            "title": "Environment Variables"
-          },
-          {
-            "href": "/basic-features/eslint",
-            "path": "basic-features/eslint.md",
-            "title": "Eslint"
-          },
-          {
-            "href": "/basic-features/fast-refresh",
-            "path": "basic-features/fast-refresh.md",
-            "title": "Fast Refresh"
-          },
-          {
-            "href": "/basic-features/font-optimization",
-            "path": "basic-features/font-optimization.md",
-            "title": "Font Optimization"
-          },
-          {
-            "href": "/basic-features/image-optimization",
-            "path": "basic-features/image-optimization.md",
-            "title": "Image Optimization"
-          },
-          {
-            "href": "/basic-features/layouts",
-            "path": "basic-features/layouts.md",
-            "title": "Layouts"
-          },
-          {
-            "href": "/basic-features/pages",
-            "path": "basic-features/pages.md",
-            "title": "Pages"
-          },
-          {
-            "href": "/basic-features/script",
-            "path": "basic-features/script.md",
-            "title": "Script"
-          },
-          {
-            "href": "/basic-features/static-file-serving",
-            "path": "basic-features/static-file-serving.md",
-            "title": "Static File Serving"
-          },
-          {
-            "href": "/basic-features/supported-browsers-features",
-            "path": "basic-features/supported-browsers-features.md",
-            "title": "Supported Browsers Features"
-          },
-          {
-            "href": "/basic-features/typescript",
-            "path": "basic-features/typescript.md",
-            "title": "Typescript"
-          }
-        ],
-        "subfolders": [
-          {
-            "id": "basic-features/data-fetching",
-            "pathSegment": "data-fetching",
-            "label": "Data Fetching",
-            "pages": [
-              {
-                "href": "/basic-features/data-fetching/client-side",
-                "path": "basic-features/data-fetching/client-side.md",
-                "title": "Client Side"
-              },
-              {
-                "href": "/basic-features/data-fetching/get-server-side-props",
-                "path": "basic-features/data-fetching/get-server-side-props.md",
-                "title": "Get Server Side Props"
-              },
-              {
-                "href": "/basic-features/data-fetching/get-static-paths",
-                "path": "basic-features/data-fetching/get-static-paths.md",
-                "title": "Get Static Paths"
-              },
-              {
-                "href": "/basic-features/data-fetching/get-static-props",
-                "path": "basic-features/data-fetching/get-static-props.md",
-                "title": "Get Static Props"
-              },
-              {
-                "href": "/basic-features/data-fetching/incremental-static-regeneration",
-                "path": "basic-features/data-fetching/incremental-static-regeneration.md",
-                "title": "Incremental Static Regeneration"
-              },
-              {
-                "href": "/basic-features/data-fetching/overview",
-                "path": "basic-features/data-fetching/overview.md",
-                "title": "Overview"
+                "href": "/advanced-features/amp-support/typescript",
+                "path": "advanced-features/amp-support/typescript.md",
+                "title": "Typescript"
               }
             ],
             "subfolders": []
@@ -670,32 +456,246 @@
         "subfolders": []
       },
       {
-        "id": "routing",
-        "pathSegment": "routing",
-        "label": "Routing",
+        "id": "api-reference",
+        "pathSegment": "api-reference",
+        "label": "Api Reference",
         "pages": [
           {
-            "href": "/routing/dynamic-routes",
-            "path": "routing/dynamic-routes.md",
-            "title": "Dynamic Routes"
+            "href": "/api-reference/create-next-app",
+            "path": "api-reference/create-next-app.md",
+            "title": "Create Next App"
           },
           {
-            "href": "/routing/imperatively",
-            "path": "routing/imperatively.md",
-            "title": "Imperatively"
+            "href": "/api-reference/cli",
+            "path": "api-reference/cli.md",
+            "title": "Cli"
           },
           {
-            "href": "/routing/introduction",
-            "path": "routing/introduction.md",
-            "title": "Introduction"
-          },
-          {
-            "href": "/routing/shallow-routing",
-            "path": "routing/shallow-routing.md",
-            "title": "Shallow Routing"
+            "href": "/api-reference/edge-runtime",
+            "path": "api-reference/edge-runtime.md",
+            "title": "Edge Runtime"
           }
         ],
-        "subfolders": []
+        "subfolders": [
+          {
+            "id": "api-reference/next",
+            "pathSegment": "next",
+            "label": "Next",
+            "pages": [
+              {
+                "href": "/api-reference/next/image",
+                "path": "api-reference/next/image.md",
+                "title": "Image"
+              },
+              {
+                "href": "/api-reference/next/link",
+                "path": "api-reference/next/link.md",
+                "title": "Link"
+              },
+              {
+                "href": "/api-reference/next/script",
+                "path": "api-reference/next/script.md",
+                "title": "Script"
+              },
+              {
+                "href": "/api-reference/next/head",
+                "path": "api-reference/next/head.md",
+                "title": "Head"
+              },
+              {
+                "href": "/api-reference/next/amp",
+                "path": "api-reference/next/amp.md",
+                "title": "Amp"
+              },
+              {
+                "href": "/api-reference/next/router",
+                "path": "api-reference/next/router.md",
+                "title": "Router"
+              },
+              {
+                "href": "/api-reference/next/server",
+                "path": "api-reference/next/server.md",
+                "title": "Server"
+              }
+            ],
+            "subfolders": [
+              {
+                "id": "api-reference/next/future",
+                "pathSegment": "future",
+                "label": "Future",
+                "pages": [
+                  {
+                    "href": "/api-reference/next/future/image",
+                    "path": "api-reference/next/future/image.md",
+                    "title": "Image"
+                  }
+                ],
+                "subfolders": []
+              }
+            ]
+          },
+          {
+            "id": "api-reference/data-fetching",
+            "pathSegment": "data-fetching",
+            "label": "Data Fetching",
+            "pages": [
+              {
+                "href": "/api-reference/data-fetching/get-static-props",
+                "path": "api-reference/data-fetching/get-static-props.md",
+                "title": "Get Static Props"
+              },
+              {
+                "href": "/api-reference/data-fetching/get-static-paths",
+                "path": "api-reference/data-fetching/get-static-paths.md",
+                "title": "Get Static Paths"
+              },
+              {
+                "href": "/api-reference/data-fetching/get-server-side-props",
+                "path": "api-reference/data-fetching/get-server-side-props.md",
+                "title": "Get Server Side Props"
+              },
+              {
+                "href": "/api-reference/data-fetching/get-initial-props",
+                "path": "api-reference/data-fetching/get-initial-props.md",
+                "title": "Get Initial Props"
+              }
+            ],
+            "subfolders": []
+          },
+          {
+            "id": "api-reference/next.config.js",
+            "pathSegment": "next.config.js",
+            "label": "Next.config.js",
+            "pages": [
+              {
+                "href": "/api-reference/next.config.js/introduction",
+                "path": "api-reference/next.config.js/introduction.md",
+                "title": "Introduction"
+              },
+              {
+                "href": "/api-reference/next.config.js/environment-variables",
+                "path": "api-reference/next.config.js/environment-variables.md",
+                "title": "Environment Variables"
+              },
+              {
+                "href": "/api-reference/next.config.js/basepath",
+                "path": "api-reference/next.config.js/basepath.md",
+                "title": "Basepath"
+              },
+              {
+                "href": "/api-reference/next.config.js/rewrites",
+                "path": "api-reference/next.config.js/rewrites.md",
+                "title": "Rewrites"
+              },
+              {
+                "href": "/api-reference/next.config.js/redirects",
+                "path": "api-reference/next.config.js/redirects.md",
+                "title": "Redirects"
+              },
+              {
+                "href": "/api-reference/next.config.js/headers",
+                "path": "api-reference/next.config.js/headers.md",
+                "title": "Headers"
+              },
+              {
+                "href": "/api-reference/next.config.js/custom-page-extensions",
+                "path": "api-reference/next.config.js/custom-page-extensions.md",
+                "title": "Custom Page Extensions"
+              },
+              {
+                "href": "/api-reference/next.config.js/custom-webpack-config",
+                "path": "api-reference/next.config.js/custom-webpack-config.md",
+                "title": "Custom Webpack Config"
+              },
+              {
+                "href": "/api-reference/next.config.js/compression",
+                "path": "api-reference/next.config.js/compression.md",
+                "title": "Compression"
+              },
+              {
+                "href": "/api-reference/next.config.js/runtime-configuration",
+                "path": "api-reference/next.config.js/runtime-configuration.md",
+                "title": "Runtime Configuration"
+              },
+              {
+                "href": "/api-reference/next.config.js/cdn-support-with-asset-prefix",
+                "path": "api-reference/next.config.js/cdn-support-with-asset-prefix.md",
+                "title": "Cdn Support With Asset Prefix"
+              },
+              {
+                "href": "/api-reference/next.config.js/exportPathMap",
+                "path": "api-reference/next.config.js/exportPathMap.md",
+                "title": "ExportPathMap"
+              },
+              {
+                "href": "/api-reference/next.config.js/trailing-slash",
+                "path": "api-reference/next.config.js/trailing-slash.md",
+                "title": "Trailing Slash"
+              },
+              {
+                "href": "/api-reference/next.config.js/react-strict-mode",
+                "path": "api-reference/next.config.js/react-strict-mode.md",
+                "title": "React Strict Mode"
+              },
+              {
+                "href": "/api-reference/next.config.js/configuring-the-build-id",
+                "path": "api-reference/next.config.js/configuring-the-build-id.md",
+                "title": "Configuring The Build Id"
+              },
+              {
+                "href": "/api-reference/next.config.js/configuring-onDemandEntries",
+                "path": "api-reference/next.config.js/configuring-onDemandEntries.md",
+                "title": "Configuring OnDemandEntries"
+              },
+              {
+                "href": "/api-reference/next.config.js/ignoring-typescript-errors",
+                "path": "api-reference/next.config.js/ignoring-typescript-errors.md",
+                "title": "Ignoring Typescript Errors"
+              },
+              {
+                "href": "/api-reference/next.config.js/ignoring-eslint",
+                "path": "api-reference/next.config.js/ignoring-eslint.md",
+                "title": "Ignoring Eslint"
+              },
+              {
+                "href": "/api-reference/next.config.js/setting-a-custom-build-directory",
+                "path": "api-reference/next.config.js/setting-a-custom-build-directory.md",
+                "title": "Setting A Custom Build Directory"
+              },
+              {
+                "href": "/api-reference/next.config.js/disabling-x-powered-by",
+                "path": "api-reference/next.config.js/disabling-x-powered-by.md",
+                "title": "Disabling X Powered By"
+              },
+              {
+                "href": "/api-reference/next.config.js/disabling-etag-generation",
+                "path": "api-reference/next.config.js/disabling-etag-generation.md",
+                "title": "Disabling Etag Generation"
+              },
+              {
+                "href": "/api-reference/next.config.js/disabling-http-keep-alive",
+                "path": "api-reference/next.config.js/disabling-http-keep-alive.md",
+                "title": "Disabling Http Keep Alive"
+              },
+              {
+                "href": "/api-reference/next.config.js/static-optimization-indicator",
+                "path": "api-reference/next.config.js/static-optimization-indicator.md",
+                "title": "Static Optimization Indicator"
+              },
+              {
+                "href": "/api-reference/next.config.js/url-imports",
+                "path": "api-reference/next.config.js/url-imports.md",
+                "title": "Url Imports"
+              },
+              {
+                "href": "/api-reference/next.config.js/build-indicator",
+                "path": "api-reference/next.config.js/build-indicator.md",
+                "title": "Build Indicator"
+              }
+            ],
+            "subfolders": []
+          }
+        ]
       }
     ]
   }
